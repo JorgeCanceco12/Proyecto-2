@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagen a la izquierda, texto a la derecha</title>
+    <style>
+        /* Estilos del contenedor principal con la imagen de fondo */
+        .contenedor {
+            background-image: url('https://integrait.com.mx/wp-content/uploads/2024/04/Metaverso-Blog-DEC-1024x576-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para el contenedor de imagen y texto */
+        .imagen-texto-contenedor {
+            display: flex;
+            align-items: stretch; /* Alinea la imagen y el texto para que coincidan en altura */
+            justify-content: center;
+            margin: 20px;
+        }
+
+        /* Estilo para la imagen */
+        .imagen {
+            margin-right: 20px;
+            object-fit: cover; /* Asegura que la imagen mantenga sus proporciones */
+        }
+
+        /* Estilo para que la imagen ocupe la misma altura que el texto */
+        .texto {
+            max-width: 600px;
+            font-size: 1.2rem;
+        }
+
+        .imagen {
+            height: auto;
+            max-height: 100%; /* Ajusta la altura de la imagen al tamaño del contenedor de texto */
+        }
+
+        /* Estilos para el footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Metaverso</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">¿Qué es?</a></li>
+                    <li><a href="paraqueseusa.html">¿Para qué se usa?</a></li>
+                    <li><a href="tecnologiasquelaimpulsan.html">Tecnologías que lo impulsan</a></li>
+                    <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="quenosofrece.html">¿Qué nos ofrece?</a></li>
+                    <li><a href="elfuturodelmetaverso.html">El futuro del metaverso</a></li>
+                    <li><a href="ejemplosdelmetaverso.html">Ejemplos del metaverso</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Contenedor con la imagen y el texto alineados -->
+    <div class="imagen-texto-contenedor">
+        <img src="imagenes/chica.png" alt="Descripción de la imagen" class="imagen" width="200">
+        <div class="texto">
+            <h1>¿Para qué se usa?</h1>
+            <p>
+                Actualmente, el metaverso se está utilizando en varios campos. Cuando hablamos del metaverso abundan los ejemplos:
+                <br><br>
+                <b>Entretenimiento:</b> uno de los ejemplos más comunes del metaverso, son los juegos de realidad virtual y videojuegos en línea. Que se han convertido en una forma popular de entretenimiento, permitiendo a los usuarios interactuar con mundos virtuales y otros jugadores.
+                <br><br>
+                <b>Educación:</b> el metaverso se está utilizando cada vez más como una herramienta educativa, permitiendo a los estudiantes visitar y explorar mundos virtuales relacionados con su educación, y colaborar con otros estudiantes de todo el mundo.
+                <br><br>
+                <b>Negocios:</b> las empresas están utilizando el metaverso para crear espacios virtuales para la colaboración, la formación y la promoción de sus productos y servicios.
+                <br><br>
+                <b>Artes y cultura:</b> los artistas y los creadores de contenido están utilizando el metaverso como un medio para crear y compartir su trabajo.
+                <br><br>
+                <b>Ciencia y tecnología:</b> el metaverso, también, se está utilizando en campos como la robótica, la inteligencia artificial y la simulación científica para realizar experimentos y simulaciones que serían imposibles o muy costosas de llevar a cabo en la vida real.
+                <br><br>
+                <b>Comunidad:</b> hay un número creciente de comunidades virtuales en el metaverso, donde las personas pueden interactuar, colaborar y compartir intereses comunes.
+                <br><br>
+                <b>Turismo:</b> algunas empresas están comenzando a crear experiencias de turismo virtual, donde los visitantes pueden explorar lugares y ciudades en todo el mundo sin tener que salir de sus hogares.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Creado por Jorge Canceco</p>
+    </footer>
+</body>
+</html>

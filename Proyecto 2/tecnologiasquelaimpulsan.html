@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto a la izquierda, imagen a la derecha</title>
+    <style>
+        /* Estilos del contenedor principal con la imagen de fondo */
+        .contenedor {
+            background-image: url('https://integrait.com.mx/wp-content/uploads/2024/04/Metaverso-Blog-DEC-1024x576-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para el contenedor de imagen y texto */
+        .imagen-texto-contenedor {
+            display: flex;
+            align-items: center; /* Alinea la imagen y el texto verticalmente */
+            justify-content: center;
+            margin: 20px;
+        }
+
+        /* Estilo para el texto */
+        .texto {
+            max-width: 600px;
+            font-size: 1.2rem;
+            margin-right: 20px; /* Da un margen derecho al texto */
+        }
+
+        /* Estilo para la imagen */
+        .imagen {
+            max-width: 300px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            margin-left: 20px; /* Da un margen izquierdo a la imagen */
+        }
+
+        /* Estilos para el footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Metaverso</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">¿Qué es?</a></li>
+                    <li><a href="paraqueseusa.html">¿Para qué se usa?</a></li>
+                    <li><a href="tecnologiasquelaimpulsan.html">Tecnologías que lo impulsan</a></li>
+                    <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="quenosofrece.html">¿Qué nos ofrece?</a></li>
+                    <li><a href="elfuturodelmetaverso.html">El futuro del metaverso</a></li>
+                    <li><a href="ejemplosdelmetaverso.html">Ejemplos del metaverso</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Contenedor con el texto a la izquierda y la imagen a la derecha -->
+    <div class="imagen-texto-contenedor">
+        <div class="texto">
+            <h1>Tecnologías que lo impulsan</h1>
+            <p>
+                Para hacer que la experiencia del metaverso sea más inmersiva, las empresas están utilizando tecnologías de vanguardia como blockchain, realidad aumentada (RA) y realidad virtual (RV), reconstrucción 3D, inteligencia artificial (IA) e Internet de las cosas (IoT) para impulsar el mundo 3D.<br><br>
+
+                <b>Blockchain:</b> Criptomonedas, NFTs, descentralización, propiedad digital.<br><br>
+
+                <b>5G y redes de próxima generación:</b> Conectividad, baja latencia, transmisión de datos en tiempo real.
+            </p>
+        </div>
+        <img src="imagenes/metaverso-foto.jpg" alt="Descripción de la imagen" class="imagen">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Creado por Jorge Canceco</p>
+    </footer>
+</body>
+</html>

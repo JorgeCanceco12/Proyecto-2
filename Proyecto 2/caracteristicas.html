@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto a la izquierda, imagen a la derecha</title>
+    <style>
+        /* Estilos del contenedor principal con la imagen de fondo */
+        .contenedor {
+            background-image: url('https://integrait.com.mx/wp-content/uploads/2024/04/Metaverso-Blog-DEC-1024x576-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilos para el contenedor de imagen y texto */
+        .imagen-texto-contenedor {
+            display: flex;
+            align-items: center; /* Alinea la imagen y el texto verticalmente */
+            justify-content: center;
+            margin: 20px;
+        }
+
+        /* Estilo para el contenedor de la imagen */
+        .imagen-contenedor {
+            position: relative;
+            width: 100%;
+            max-width: 100%; /* Ajusta el ancho máximo del contenedor de la imagen a 100% */
+        }
+
+        /* Estilo para la imagen */
+        .imagen {
+            width: 100%; /* La imagen ocupa todo el ancho del contenedor */
+            height: auto;
+            object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
+        }
+
+        /* Estilo para el texto encima de la imagen */
+        .texto-titulo {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2rem;
+            color: white;
+            text-align: center;
+            width: 100%;
+            max-width: 100%; /* Debe ser igual al ancho máximo del contenedor de la imagen */
+            padding: 10px;
+            box-sizing: border-box;
+            background-color: rgba(0, 0, 0, 0.5); /* Opcional: para mejorar la legibilidad */
+        }
+
+        /* Estilo para el texto de contenido */
+        .texto {
+            max-width: 600px;
+            font-size: 1.2rem;
+            margin-left: 20px; /* Da un margen izquierdo al texto */
+            position: relative;
+        }
+
+        /* Estilos para el footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contenedor">
+        <header>
+            <h1>Metaverso</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">¿Qué es?</a></li>
+                    <li><a href="paraqueseusa.html">¿Para qué se usa?</a></li>
+                    <li><a href="tecnologiasquelaimpulsan.html">Tecnologías que lo impulsan</a></li>
+                    <li><a href="caracteristicas.html">Características</a></li>
+                    <li><a href="quenosofrece.html">¿Qué nos ofrece?</a></li>
+                    <li><a href="elfuturodelmetaverso.html">El futuro del metaverso</a></li>
+                    <li><a href="ejemplosdelmetaverso.html">Ejemplos del metaverso</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <!-- Contenedor con el texto a la izquierda y la imagen a la derecha -->
+    <div class="imagen-texto-contenedor">
+        <div class="texto">
+            <div class="imagen-contenedor">
+                <img src="imagenes/metaclick.png" alt="Descripción de la imagen" class="imagen">
+                <div class="texto-titulo">Características</div>
+            </div>
+            <p>
+                <b>Virtualidad persistente:</b> El metaverso existe de forma continua, independientemente de si estás conectado o no. Los cambios y las creaciones dentro de este espacio permanecen a lo largo del tiempo.
+                <br><br>
+                <b>Inmersión:</b> Los usuarios pueden sumergirse en experiencias altamente realistas y envolventes gracias a tecnologías como la realidad virtual y la realidad aumentada.
+                <br><br>
+                <b>Interactividad:</b> El metaverso fomenta la interacción entre los usuarios, permitiendo la comunicación, la colaboración y la creación de contenido de manera dinámica.
+                <br><br>
+                <b>Interoperabilidad:</b> Idealmente, el metaverso debería permitir que los usuarios se muevan libremente entre diferentes plataformas y mundos virtuales, utilizando sus avatares y objetos virtuales.
+                <br><br>
+                <b>Economía virtual:</b> El metaverso puede tener su propia economía, donde los usuarios pueden comprar, vender y comerciar con bienes y servicios digitales.
+                <br><br>
+                <b>Creatividad:</b> Los usuarios pueden crear y personalizar sus propias experiencias dentro del metaverso, desde construir casas virtuales hasta diseñar ropa para sus avatares.
+                <br><br>
+                <b>Sincronicidad:</b> Las acciones de los usuarios ocurren en tiempo real, lo que permite una interacción más natural y espontánea.
+                <br><br>
+                <b>Accesibilidad:</b> El metaverso puede ser accesible desde una variedad de dispositivos, como computadoras, teléfonos inteligentes y gafas de realidad virtual.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Creado por Jorge Canceco</p>
+    </footer>
+</body>
+</html>
